@@ -25,4 +25,8 @@ fun sequenceSteps(arrData: Array<Int>, maxNo:Int, steps: Int): Int{
 fun main(){
     var result = sequenceSteps(arrayOf(2,3,4,5), 4, 3)
     println(result)
+
+    // extension
+    var list = mutableListOf<Int>(1,2)
+    list.swap(0,2)
 }
