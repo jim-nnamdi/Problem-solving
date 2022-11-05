@@ -27,6 +27,14 @@ fun main(){
     println(result)
 
     // extension
-    var list = mutableListOf<Int>(1,2)
-    list.swap(0,2)
+//    var list = mutableListOf<Int>(1,2)
+//    list.swap(0,2)
+
+    // higher order functions
+    val sResult = hofAnalysis(2,3, ::sumTwo)
+    println(sResult)
+
+    // hof second
+    val ares = hofAnalysis(2,3) { a, b -> a + b}
+    println(ares)
 }
