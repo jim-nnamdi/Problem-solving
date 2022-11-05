@@ -18,5 +18,4 @@ class QueueDs<B>(vararg items: B) {
 
     // see the first element in queue
     fun seeFirstElement() = elements.first()
-
 }
