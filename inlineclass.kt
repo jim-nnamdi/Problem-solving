@@ -1,5 +1,12 @@
-inline class Width(val width: Long)
-inline class Height(val height: Long)
+
+@JvmInline
+value class Width(val width:Long)
+
+@JvmInline
+value class Height(val height:Long)
+
+// so under the hood, the compiler runs the code
+// as follows -> Rectangle__(val width:Long, val height: Long)
 
 class Rectangle(val width: Width, val height: Height) {
     val w: Width? = width
